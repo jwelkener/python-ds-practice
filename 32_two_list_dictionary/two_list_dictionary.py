@@ -1,4 +1,18 @@
 def two_list_dictionary(keys, values):
+
+    from itertools import zip_longest
+
+    return dict(zip_longest(keys, values))
+    # option B:
+
+    # out = {}
+
+    # for idx, val in enumerate(keys):
+    #     out[val] = values[idx]
+    #     idx < len(values) else None
+    
+    # return out
+
     """Given keys and values, make dictionary of those.
     
         >>> two_list_dictionary(['x', 'y', 'z'], [9, 8, 7])
