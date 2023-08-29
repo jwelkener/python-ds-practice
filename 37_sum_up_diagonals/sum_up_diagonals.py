@@ -1,7 +1,7 @@
 def sum_up_diagonals(matrix):
     sum = 0
 
-    for num in matrix:
+    for i in range(len(matrix)):
         total += [i][i]
         total += [i][-1-i]
 
