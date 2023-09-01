@@ -1,4 +1,8 @@
 def read_file_list(filename):
+    with open(filename) as f:
+        for line in f:
+            print(f'- {line.strip()}')
+
     """Read file and print out each line separately with a "-" before it.
 
     For example, if we have a file, `dogs`, containing:
